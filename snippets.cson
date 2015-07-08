@@ -1,0 +1,91 @@
+# PHP
+'.text.php':
+  'PHP console log':
+    'prefix': 'logger'
+    'body': 'error_log( print_r( $1, true ) );'
+  'PHP debug in HTML':
+    'prefix': 'printr'
+    'body': 'echo \'<pre>\' . print_r( $1, true ) . \'</pre>\';'
+  'PHP console log for Unit Tests':
+    'prefix': 'utdebugger'
+    'body': 'fwrite( STDERR, PHP_EOL . print_r( ${1:var}, true ) . PHP_EOL . PHP_EOL );'
+  'Set WordPress Debug':
+    'prefix': 'wpdev'
+    'body': '''
+define( \'WP_DEBUG\', true );
+define( \'WP_DEBUG_LOG\', true );
+define( \'WP_DEBUG_DISPLAY\', true );
+
+    '''
+  'WordPress Plugin Header':
+    'prefix': 'pluginheader'
+    'body': '''
+/**
+ * Plugin Name: ${1:Lorem Ipsum}
+ * Plugin URI: https://github.com/claudiosmweb/${2:repo}
+ * Description: ${3:Lorem Ipsum}
+ * Author: Claudio Sanches
+ * Author URI: http://claudiosmweb.com
+ * Version: ${4:0.0.1}
+ * License: GPLv2 or later
+ * Text Domain: ${5:textdomain}
+ * Domain Path: languages/
+ */
+$6
+'''
+
+# Utilities
+'*':
+  'Editorconfig standard':
+    'prefix': 'editorconfig'
+    'body': '''
+# editorconfig.org
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+indent_size = 4
+tab_width = 4
+indent_style = tab
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.md]
+trim_trailing_whitespace = false
+
+[*.txt]
+trim_trailing_whitespace = false
+
+[*.json]
+insert_final_newline = false
+indent_size = 2
+tab_width = 2
+'''
+  'Jshintrc default':
+    'prefix': 'jshintrc'
+    'body': '''
+{
+	"boss": true,
+	"curly": true,
+	"eqeqeq": true,
+	"eqnull": true,
+	"es3": true,
+	"expr": true,
+	"immed": true,
+	"noarg": true,
+	"onevar": true,
+	"quotmark": "single",
+	"trailing": true,
+	"undef": true,
+	"unused": true,
+
+	"browser": true,
+
+	"globals": {
+		"_": false,
+		"Backbone": false,
+		"jQuery": false,
+		"wp": false
+	}
+}'''
