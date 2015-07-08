@@ -1,0 +1,45 @@
+"*":
+  editor:
+    invisibles: {}
+    softWrap: true
+    tabLength: 4
+    fontFamily: "Droid Sans Mono"
+    showIndentGuide: true
+    showInvisibles: true
+  core:
+    themes: [
+      "seti-ui"
+      "atom-dark-syntax"
+    ]
+    ignoredNames: [
+      ".git"
+      ".hg"
+      ".svn"
+      "CVS"
+      ".DS_Store"
+      "node_modules"
+      ".sass-cache"
+      "tmp"
+      "apigen"
+    ]
+    disabledPackages: [
+      "metrics"
+    ]
+  welcome:
+    showOnStartup: false
+  "tree-ignore": {}
+  "tree-view":
+    hideIgnoredNames: true
+    hideVcsIgnoredFiles: true
+  "autocomplete-plus": {}
+  "spell-check": {}
+  linter: {}
+  "linter-jshint": {}
+  "linter-php":
+    phpExecutablePath: "/usr/bin/php"
+  whitespace:
+    ignoreWhitespaceOnCurrentLine: false
+  "atom-terminal": {}
+".ini.source":
+  editor:
+    softWrap: true
