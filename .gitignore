@@ -6,4 +6,4 @@ dev
 .apm
 packages/
 nohup.out
-
+blob-store/
