@@ -1,15 +1,10 @@
 "*":
-  editor:
-    invisibles: {}
-    softWrap: true
-    tabLength: 4
-    fontFamily: "Droid Sans Mono"
-    showIndentGuide: true
-    showInvisibles: true
+  "atom-terminal": {}
+  "autocomplete-plus": {}
   core:
-    themes: [
-      "seti-ui"
-      "atom-dark-syntax"
+    disabledPackages: [
+      "metrics"
+      "language-csharp"
     ]
     ignoredNames: [
       ".git"
@@ -22,24 +17,31 @@
       "tmp"
       "apigen"
     ]
-    disabledPackages: [
-      "metrics"
+    themes: [
+      "seti-ui"
+      "atom-dark-syntax"
     ]
-  welcome:
-    showOnStartup: false
+  editor:
+    fontFamily: "Droid Sans Mono"
+    invisibles: {}
+    showIndentGuide: true
+    showInvisibles: true
+    softWrap: true
+    tabLength: 4
+  linter:
+    ignoreVCSIgnoredFiles: false
+  "linter-jshint": {}
+  "linter-php":
+    phpExecutablePath: "/usr/bin/php"
+  "spell-check": {}
   "tree-ignore": {}
   "tree-view":
     hideIgnoredNames: true
     hideVcsIgnoredFiles: true
-  "autocomplete-plus": {}
-  "spell-check": {}
-  linter: {}
-  "linter-jshint": {}
-  "linter-php":
-    phpExecutablePath: "/usr/bin/php"
+  welcome:
+    showOnStartup: false
   whitespace:
     ignoreWhitespaceOnCurrentLine: false
-  "atom-terminal": {}
 ".ini.source":
   editor:
     softWrap: true
