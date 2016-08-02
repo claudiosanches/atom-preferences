@@ -28,11 +28,16 @@
     showInvisibles: true
     softWrap: true
     tabLength: 4
+  "exception-reporting":
+    userId: "e0668759-f5eb-25f0-214d-5264c6ec057c"
   linter:
     ignoreVCSIgnoredFiles: false
   "linter-jshint": {}
   "linter-php":
     phpExecutablePath: "/usr/bin/php"
+  "seti-ui":
+    compactView: true
+    themeColor: "Steel"
   "spell-check": {}
   "tree-ignore": {}
   "tree-view":

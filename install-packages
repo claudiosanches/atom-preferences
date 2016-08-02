@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 
+# Dependencies
 # gem install scss_lint
 
+# Packages
 apm install editorconfig
 apm install linter
 apm install linter-php
@@ -11,3 +13,6 @@ apm install linter-csslint
 apm install linter-scss-lint
 apm install atom-wordpress
 apm install autocomplete-wordpress-hooks
+
+# Themes
+apm install seti-ui
