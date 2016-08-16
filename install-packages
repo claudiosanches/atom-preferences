@@ -4,15 +4,20 @@
 # gem install scss_lint
 
 # Packages
-apm install editorconfig
-apm install linter
-apm install linter-php
-apm install linter-jsonlint
-apm install linter-jshint
-apm install linter-csslint
-apm install linter-scss-lint
 apm install atom-wordpress
 apm install autocomplete-wordpress-hooks
+apm install docblockr
+apm install editorconfig
+apm install emmet
+apm install jquery-snippets
+apm install lines
+apm install linter
+apm install linter-csslint
+apm install linter-jshint
+apm install linter-jsonlint
+apm install linter-php
+apm install linter-scss-lint
+apm install linter-stylelint
 
 # Themes
 apm install seti-ui

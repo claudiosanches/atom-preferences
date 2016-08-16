@@ -24,17 +24,20 @@
   editor:
     fontFamily: "Droid Sans Mono"
     invisibles: {}
+    scrollPastEnd: true
     showIndentGuide: true
     showInvisibles: true
+    softTabs: false
     softWrap: true
     tabLength: 4
-  "exception-reporting":
-    userId: "e0668759-f5eb-25f0-214d-5264c6ec057c"
+    tabType: "hard"
   linter:
     ignoreVCSIgnoredFiles: false
   "linter-jshint": {}
   "linter-php":
     phpExecutablePath: "/usr/bin/php"
+  "linter-scss-lint":
+    disableWhenNoConfigFileInPath: true
   "seti-ui":
     compactView: true
     themeColor: "Steel"
